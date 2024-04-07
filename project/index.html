@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homePage" class="page">
+        <h1>Welcome to ChatApp</h1>
+        <input type="text" id="chatTopic" placeholder="Enter chat topic">
+        <button onclick="createChat()">Create New Chat</button>
+        <ul id="chatList">
+            <!-- Existing chats will be added dynamically here -->
+        </ul>
+    </div>
+
+    <div id="chatPage" class="page">
+        <h1 id="chatTopicHeading"></h1>
+        <table id="messageTable">
+            <tr>
+                <th>Sender</th>
+                <th>Content</th>
+            </tr>
+            <!-- Messages will be added dynamically here -->
+        </table>
+        <div>
+            <input type="text" id="senderName" placeholder="Your name">
+            <input type="text" id="messageContent" placeholder="Type your message">
+            <button onclick="sendMessage()">Send</button>
+            <a href="#" onclick="goToHomePage()">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    display: none;
+}
+
+#homePage {
+    display: block;
+}
+
+#chatPage {
+    display: none;
+}
+
+#chatList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#chatList li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#messageTable {
+    width: 100%;
+}
+
+#messageTable th,
+#messageTable td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#messageTable th {
+    background-color: #f2f2f2;
+}
